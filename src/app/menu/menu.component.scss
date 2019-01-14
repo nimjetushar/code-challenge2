@@ -1,0 +1,32 @@
+@import "../styles/constants.scss";
+
+.menu-container {
+  height: $section-height;
+  background: #fff;
+
+  .menu-toggle {
+    float: right;
+    border: 1px solid #a09c9c;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 50%;
+  }
+
+  .menu-icon {
+    margin: 14px;
+    font-size: 34px;
+  }
+
+  .menu-item {
+    padding: 12px 0;
+    border-top: 1px solid #dcd0d0;
+    i {
+        padding: 0 15px;
+        font-size: 25px;
+    }
+  }
+
+  .menu-item:last-child {
+    border-bottom: 1px solid #dcd0d0;
+  }
+}

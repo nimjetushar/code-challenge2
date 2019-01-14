@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'code-chalange2';
+
+  menuStatus = true;
+
+  constructor() { }
+
+  onMenuToggle(event: boolean) {
+    this.menuStatus = event;
+  }
 }
