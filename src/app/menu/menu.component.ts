@@ -9,7 +9,7 @@ export class MenuComponent implements OnInit {
 
   @Output() menuToggle = new EventEmitter<boolean>();
 
-  isMenuOpen = true;
+  isMenuOpen = false;
   menuList: Array<{ label: string, icon: string }>;
 
   constructor() { }
@@ -20,6 +20,8 @@ export class MenuComponent implements OnInit {
       { label: 'Library', icon: 'fa-list' },
       { label: 'Self Service Utility', icon: 'fa-cog' }
     ];
+
+    this.menuToggle.emit(this.isMenuOpen);
   }
 
   onMenuToggle() {

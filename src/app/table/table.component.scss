@@ -1,6 +1,20 @@
 @import "../styles/constants.scss";
 
 .table-container {
-    height: $section-height;
-    background: #fff;
+  height: $section-height;
+  background: #fff;
+
+  .tab-container {
+    padding: 10px 0 0 40px;
+    position: relative;
+  }
+
+  .table-section {
+    margin: 15px;
+  }
+
+  .global-search {
+    position: absolute;
+    right: 18px;
+  }
 }
