@@ -29,7 +29,8 @@ export class TableModel {
             },
             {
                 header: 'Status Message',
-                field: 'status_msg'
+                field: 'status_msg',
+                className: 'unwrap-content'
             },
             {
                 header: 'Payment Number',

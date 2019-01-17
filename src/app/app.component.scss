@@ -1,8 +1,9 @@
 .body-section {
-  margin-top: 48px;
+  margin-top: 15px;
 }
 
-.menu, .table-section {
+.menu,
+.table-section {
   display: inline-block;
   vertical-align: top;
 }
@@ -15,4 +16,8 @@
 .table-section {
   display: inline-block;
   max-width: 94%
+}
+
+.app-wrapper {
+  min-width: 1400px;
 }

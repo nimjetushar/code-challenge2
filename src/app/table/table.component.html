@@ -8,17 +8,17 @@
     </li>
   </ul>
   <div class="table-section">
-    <p-table #dt [columns]="columns" [value]="tableData" [paginator]="true" [rows]="6">
+    <p-table #dt [columns]="columns" [value]="tableData" [paginator]="true" [rows]="noOfRowToDisplay">
       <ng-template pTemplate="header" let-columns>
         <tr>
-          <th *ngFor="let col of columns">
+          <th *ngFor="let col of columns" class="text-center">
             {{col.header}}
           </th>
         </tr>
       </ng-template>
       <ng-template pTemplate="body" let-rowData let-columns="columns">
         <tr>
-          <td *ngFor="let col of columns">
+          <td *ngFor="let col of columns" [ngClass]="col.className">
             {{rowData[col.field]}}
           </td>
         </tr>

@@ -1,0 +1,9 @@
+<div class="command-palet-container row">
+  <div class="title">Dashboard</div>
+  <div class="command-palet">
+    <div *ngFor="let item of commandPalets">
+      <div class="box" [ngClass]="item.className"></div>
+      <div>{{item.label}}</div>
+    </div>
+  </div>
+</div>

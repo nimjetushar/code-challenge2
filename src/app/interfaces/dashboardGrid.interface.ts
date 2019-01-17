@@ -18,6 +18,7 @@ export interface DashboardGridData {
 export interface TableColumns {
     field: string;
     header: string;
+    className?: string;
 }
 
 export interface Tabs {

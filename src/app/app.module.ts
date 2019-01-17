@@ -11,13 +11,15 @@ import { TableComponent } from './table/table.component';
 
 import { HttpService } from './services/http.service';
 import { ApiService } from './services/api.service';
+import { CommandPaletComponent } from './command-palet/command-palet.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MenuComponent,
-    TableComponent
+    TableComponent,
+    CommandPaletComponent
   ],
   imports: [
     BrowserModule,

@@ -15,6 +15,7 @@ export class TableComponent implements OnInit {
   currTab: number;
   columns: Array<TableColumns>;
   tableData: Array<DashboardGridData>;
+  noOfRowToDisplay = 10;
 
   private _tableModel: TableModel;
 

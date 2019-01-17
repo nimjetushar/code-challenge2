@@ -17,4 +17,17 @@
     position: absolute;
     right: 18px;
   }
+
+  .ui-table-tbody tr td {
+    font-size: 12px;
+  }
+
+  .ui-table-thead th {
+    font-size: 13px;
+  }
+
+  .unwrap-content {
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
