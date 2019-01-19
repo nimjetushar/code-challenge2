@@ -1,5 +1,7 @@
 # CodeChalange2
 
+![](https://img.shields.io/github/license/nimjetushar/code-challenge2.svg)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.9.
 
 ## Development server
