@@ -1,4 +1,4 @@
-# CodeChalange2
+# Code Chalange 2
 
 ![](https://img.shields.io/github/license/nimjetushar/code-challenge2.svg)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0902a0655cac46bb81b27a0679232c2e)](https://www.codacy.com/app/tushar/code-challenge2?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nimjetushar/code-challenge2&amp;utm_campaign=Badge_Grade)
