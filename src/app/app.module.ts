@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { TableModule } from 'primeng/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { TooltipModule } from 'primeng/tooltip';
+
+import routes from './app.route';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -25,7 +29,9 @@ import { CommandPaletComponent } from './command-palet/command-palet.component';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    TableModule
+    RouterModule.forRoot(routes, { useHash: true }),
+    TableModule,
+    TooltipModule
   ],
   providers: [
     HttpService,

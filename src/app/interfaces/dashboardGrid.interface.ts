@@ -19,6 +19,7 @@ export interface TableColumns {
     field: string;
     header: string;
     className?: string;
+    hasTooltip?: boolean;
 }
 
 export interface Tabs {

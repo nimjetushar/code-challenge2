@@ -30,7 +30,8 @@ export class TableModel {
             {
                 header: 'Status Message',
                 field: 'status_msg',
-                className: 'unwrap-content'
+                className: 'unwrap-content',
+                hasTooltip: true
             },
             {
                 header: 'Payment Number',

@@ -4,7 +4,8 @@
       <a class="nav-link" [ngClass]="{'active': currTab === tab.key}" (click)="selectTab(tab)">{{tab.label}}</a>
     </li>
     <li class="global-search">
-      <input type="text" class="form-control" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Global search"/>
+      <input type="text" class="form-control" (input)="dt.filterGlobal($event.target.value, 'contains')"
+        placeholder="Global search" />
     </li>
   </ul>
   <div class="table-section">
@@ -18,7 +19,8 @@
       </ng-template>
       <ng-template pTemplate="body" let-rowData let-columns="columns">
         <tr>
-          <td *ngFor="let col of columns" [ngClass]="col.className">
+          <td *ngFor="let col of columns" [ngClass]="col.className" [pTooltip]="col.hasTooltip && rowData[col.field]"
+            tooltipPosition="top">
             {{rowData[col.field]}}
           </td>
         </tr>
