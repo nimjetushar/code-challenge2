@@ -5,14 +5,14 @@ import { TableModule } from 'primeng/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { TooltipModule } from 'primeng/tooltip';
+import { DialogModule } from 'primeng/dialog';
 
-import routes from './app.route';
+import { routes } from './app.route';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { TableComponent } from './table/table.component';
-import { DialogModule } from 'primeng/dialog';
 
 import { HttpService } from './services/http.service';
 import { ApiService } from './services/api.service';
