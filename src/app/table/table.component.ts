@@ -16,6 +16,8 @@ export class TableComponent implements OnInit {
   columns: Array<TableColumns>;
   tableData: Array<DashboardGridData>;
   noOfRowToDisplay = 10;
+  openDialog: boolean;
+  selectedItem: DashboardGridData;
 
   private _tableModel: TableModel;
 
@@ -47,6 +49,11 @@ export class TableComponent implements OnInit {
     this.currTab = tab.key;
 
     // need to write logic to change data wrt the selected tab
+  }
+
+  openDialogBox(rowData: DashboardGridData) {
+    this.openDialog = true;
+    this.selectedItem = Object.assign(rowData);
   }
 
 }

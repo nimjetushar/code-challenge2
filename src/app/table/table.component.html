@@ -18,7 +18,7 @@
         </tr>
       </ng-template>
       <ng-template pTemplate="body" let-rowData let-columns="columns">
-        <tr>
+        <tr (click)="openDialogBox(rowData)">
           <td *ngFor="let col of columns" [ngClass]="col.className" [pTooltip]="col.hasTooltip && rowData[col.field]"
             tooltipPosition="top">
             {{rowData[col.field]}}
@@ -28,3 +28,4 @@
     </p-table>
   </div>
 </div>
+<app-modal [show]="openDialog" [modalData]="selectedItem"></app-modal>

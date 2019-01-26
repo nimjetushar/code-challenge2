@@ -12,10 +12,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { TableComponent } from './table/table.component';
+import { DialogModule } from 'primeng/dialog';
 
 import { HttpService } from './services/http.service';
 import { ApiService } from './services/api.service';
 import { CommandPaletComponent } from './command-palet/command-palet.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { CommandPaletComponent } from './command-palet/command-palet.component';
     HeaderComponent,
     MenuComponent,
     TableComponent,
-    CommandPaletComponent
+    CommandPaletComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { CommandPaletComponent } from './command-palet/command-palet.component';
     HttpClientModule,
     RouterModule.forRoot(routes, { useHash: true }),
     TableModule,
-    TooltipModule
+    TooltipModule,
+    DialogModule
   ],
   providers: [
     HttpService,
